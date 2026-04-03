@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Para Sebas</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+      animation: fadeIn 2s ease;
+    }
+
+    header h1 {
+      font-size: 3em;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      margin-top: 15px;
+      font-size: 1.2em;
+      opacity: 0.85;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      padding: 25px;
+      margin: 20px 0;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+      animation: slideUp 1.2s ease;
+    }
+
+    .card h2 {
+      margin-bottom: 15px;
+      color: #ffd700;
+    }
+
+    .card p {
+      line-height: 1.6;
+      font-size: 1.1em;
+    }
+
+    .btn {
+      display: block;
+      margin: 40px auto;
+      padding: 15px 30px;
+      background: #ffd700;
+      border: none;
+      border-radius: 30px;
+      font-size: 1em;
+      cursor: pointer;
+      color: #333;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #fff;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9em;
+      opacity: 0.7;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Para Sebas</h1>
+    <p>Un pequeño detalle hecho con calma, pensado solo para ti</p>
+  </header>
+
+  <div class="container">
+
+    <div class="card">
+      <h2>Hola, Sebas</h2>
+      <p>
+        No es común detenerse a escribir algo así, pero hay personas que hacen que valga la pena hacerlo.
+        Hoy quise tomarme un momento para dejar algo distinto, algo que no se borre tan fácil.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Sobre ti</h2>
+      <p>
+        Hay algo en tu forma de ser que se nota, incluso en los detalles pequeños.
+        No hace falta que hagas cosas enormes para destacar, porque lo que eres ya dice bastante.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Un mensaje sincero</h2>
+      <p>
+        Ojalá nunca pierdas eso que te hace ser tú.
+        A veces uno no se da cuenta del impacto que tiene en los demás,
+        pero créeme, hay cosas que simplemente se sienten y se valoran más de lo que parece.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Y por último</h2>
+      <p>
+        Esto no es algo complicado, ni pretende serlo.
+        Es solo una forma diferente de decir que eres importante,
+        y que alguien se tomó el tiempo de pensar en ti de una manera especial.
+      </p>
+    </div>
+
+    <button class="btn" onclick="mensajeFinal()">Haz clic aquí</button>
+
+  </div>
+
+  <footer>
+    Hecho por Fernanda
+  </footer>
+
+  <script>
+    function mensajeFinal() {
+      alert("Sebas, esto es solo una pequeña forma de recordarte que eres alguien valioso.");
+    }
+  </script>
+
+</body>
+</html>
